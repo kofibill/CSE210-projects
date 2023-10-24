@@ -53,6 +53,9 @@ class Program
              {
 
              }
+             /* I showed creativity and exceeded the requirment by saving and displaying the
+             name of the user. The user is asked to input his or her full name at the beginning of the program.
+             */
              
             }
     }
