@@ -11,14 +11,18 @@ public class Word
         _hidden = false;
     }
 
-    public void Hide()
+    public string Hide()
     {
         string tmp = "";
         for (int _ = 0; _ < _word.Length; _++)
         {
             tmp += "_";
         }
-        _word = tmp;
+        return tmp;
+    }
+
+    public void Procedure()
+    {
         _hidden = true;
     }
            

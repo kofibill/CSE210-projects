@@ -12,7 +12,7 @@ public class Reference
     {
         _book = book;
         _chapter = chapter;
-        _verse = $"{verseStart}- {verseEnd}";
+        _verse = $"{verseStart} - {verseEnd}";
         //_verseEnd = verseEnd;
     }
 
