@@ -3,20 +3,20 @@ using System;
 public class Reference
 {
     private string _book;
-    private string _chapter;
-    private string _verse;
-    //private int _verseEnd;
+    private int _chapter;
+    private int _verse;
+    private int _verseEnd;
 
    
-    public Reference(string book, string chapter, string verseStart, string verseEnd)
+    public Reference(string book, int chapter, int verseStart, int verseEnd)
     {
         _book = book;
         _chapter = chapter;
-        _verse = $"{verseStart} - {verseEnd}";
-        //_verseEnd = verseEnd;
+        _verse =verseStart;
+        _verseEnd = verseEnd;
     }
 
-     public Reference(string book, string chapter, string verseStart)
+     public Reference(string book, int chapter, int verseStart)
     {
         _book = book;
         _chapter = chapter;
@@ -25,7 +25,7 @@ public class Reference
 
     public string GetText()
      {
-         return $"{_book} {_chapter} : {_verse}";
+         return $"{_book} {_chapter}:{_verse}-{_verseEnd}:";
      }
     
     

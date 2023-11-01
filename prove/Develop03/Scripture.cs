@@ -14,22 +14,23 @@ public class Scripture
             Word word = new Word(x);
             _words.Add(word);
             Console.WriteLine(word);
-
          }
     }
 
     public void HideWords()
     {
-        Random rnd = new Random();
-        int tmp_candidate = rnd.Next(_words.Count);
-        _words[tmp_candidate].Procedure();
-        if (_words[tmp_candidate].IsHidden())
+        
+        int i = 0;
+        while (i < 3 & IsCompletelyHidden() == false)
         {
-            
-        }
-        else
-        {
-            _words[tmp_candidate].Procedure();
+            Random rnd = new Random();
+            int index = rnd.Next(_words.Count);
+            if(_words[index].IsHidden() == false)
+            {
+                _words[index].Hide();
+                i++;
+            }
+
         }
     }
 
@@ -37,18 +38,8 @@ public class Scripture
     {
         Console.Write(_reference.GetText() +" ");
         foreach(Word x in _words)
-        {
-
-            if (x.IsHidden())
-            {
-                Console.Write(x.Hide());
-            }
-            else
-                {
-                    Console.Write(x.GetRendered());
-                }
-                Console.Write(" ");
-            
+        { 
+            Console.Write($"{x.GetRendered()} ");
         }
     }
 
