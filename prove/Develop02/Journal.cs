@@ -49,13 +49,5 @@ public class Journal
 
         }
     }
-    
-
-    
-    
-
-
-
-
 
 }
