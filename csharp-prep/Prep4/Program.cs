@@ -6,18 +6,26 @@ class Program
     {
         List<int> numbers=new List<int>();
 
-        int holder=0;
+        int userNumber=-1;
 
-        while(holder ==0)
+        while(userNumber !=0)
         {
             Console.Write("Please enter a series of numbers. Type 0 when finished: ");
             string response=Console.ReadLine();
-            holder=int.Parse(response);
+            userNumber=int.Parse(response);
 
-            if (holder!=0)
+            if (userNumber!=0)
             {
-                numbers.Add(holder);
+                numbers.Add(userNumber);
             }
         }
+
+        int sum = 0;
+        foreach (int number in numbers)
+        {
+            sum += number;
+        }
+
+        Console.WriteLine($"The Sum is: {sum}");
     }
 }    
