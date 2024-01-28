@@ -16,6 +16,7 @@ public class Reference
         _verseEnd = verseEnd;
     }
 
+     //I am not sure i need a second constructor.
      public Reference(string book, int chapter, int verseStart)
     {
         _book = book;
