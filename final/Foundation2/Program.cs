@@ -20,6 +20,7 @@ class Program
         Order order1 = new Order(productsList1, customer1);
 
         Console.WriteLine("Order Number: 1");
+        Console.WriteLine();
         order1.DisplayResults();
         Console.WriteLine();
 
@@ -39,6 +40,7 @@ class Program
         Order order2 = new Order(productsList2, customer2);
 
         Console.WriteLine("Order Number: 2");
+        Console.WriteLine();
         order2.DisplayResults();
         Console.WriteLine();
 
@@ -56,6 +58,7 @@ class Program
         Order order3 = new Order(productsList3, customer3);
 
         Console.WriteLine("Order Number: 3");
+        Console.WriteLine();
         order3.DisplayResults();
         Console.WriteLine();
     }

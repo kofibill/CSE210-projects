@@ -10,6 +10,8 @@ class Program
         List<Videos> videosList = new List<Videos>();
 
         // Video 1
+        Console.WriteLine("YouTube Videos....");
+        Console.WriteLine("");   
         Videos video1 = new Videos("Yaa Asantewa:Queen warrior of Ghana", "Lindsay Holiday", 1320);
 
         Comments video1Comment1 = new Comments("William", "Intersting History!! She is from my country. Im so proud to be an Ashanti woman. Thanks for doing this, much appreciated.");
